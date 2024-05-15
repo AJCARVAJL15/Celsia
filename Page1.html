@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+      .contenedor-general{
+    margin: auto;
+}
+
+@font-face {
+    font-family: "Thin";
+    src: url(./fonts/HelveticaNeueLTStd-Th.otf);
+}
+
+@font-face {
+    font-family: Medium;
+    src: url(./fonts/helvetica-neue-lt-std-medio.woff);
+}
+:root{
+    --first-color:#ee752e;
+    --second-color: #e7e6e6;
+    --third-color:#59595B;
+    --other1-color:#13A2E1;
+    --other2-color:#00BE91;
+    --other3-color:#FFF65E;
+    --other4-color:#003FA2;
+    --other5-color:#CA0045;
+    
+}
+
+body { font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 20px; background: white; }
+.header { display: flex; justify-content: space-between; align-items: center;  }
+.logo { width: 300px; margin-left: 20px; }
+.company-info { flex-grow: 1; margin-left: 20px; margin-top: 10px; font-family: Thin}
+.company-info p { margin-bottom: 0px; margin-top: 0px; font-size: small; }
+.numero-documento { margin-right: 20px; text-align: right;  }
+.important { font-weight: bold; color: var(--first-color);}
+
+.numero-documento p:last-child{ background-color: #e7e6e6;  text-align: center; border-radius: 10px; margin-left: 200px; padding: 5px;}
+
+.valor-pago{
+    color: var(--third-color);
+}
+
+.info-valores { display: flex; justify-content: space-between; align-items: center;   justify-content: start;align-items: start; }
+
+/* table{
+
+    width: 370px;
+    font-family: Medium;
+    
+    
+    } */
+/* .info-valores table{
+
+width: 370px;
+font-family: Medium;
+
+
+} */
+
+/* table td{ width: 50%;  }
+.info-valores table td{ width: 50%;  }
+
+table td,tr{ width: 50%;}
+.info-valores table td,tr{ width: 50%;} */
+
+.info-valores img{
+
+    width: 65%;
+}
+
+.third-section{
+    display: flex;
+}
+
+h3{
+    color: var(--third-color);
+}
+
+.info-inmueble{
+
+    width: 290px;
+    height: 450px;
+    padding: 20px;
+}
+
+
+.info-energia{
+    width: 790px;
+    height: 490px;
+    
+    padding: 50px;
+    box-sizing: border-box;
+   
+}
+
+
+
+
+.third-section {
+    display: flex;
+    width: 100%;
+    height: 700px; 
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 30%; 
+    height: 100%; 
+  }
+  .right {
+    
+   
+  margin-left: 40px;
+  }
+
+  .right p{
+    margin: 2px;
+  }
+
+   h2{
+    color: var(--first-color);
+  }
+  .box {
+    flex: 1;
+    margin: 5px;
+  
+  }
+  .top-box {
+    flex-basis: 70%; 
+    padding: 20px;
+   margin: 0px;
+   background-color: #e9e8e6;
+  }
+  .bottom-box {
+    flex-basis: 30%; 
+    margin: 0px;
+    padding: 15px;
+   
+  }
+
+/* .right table th{
+    border-collapse: collapse;
+    border-right: 5px solid #e9e8e6;
+   background-color: #e9e8e6;
+   padding: 3px;
+    
+}
+
+table th{
+    border-collapse: collapse;
+    border-right: 5px solid #e9e8e6;
+   background-color: #e9e8e6;
+   padding: 3px;
+    
+} */
+
+.right table td{
+  
+ 
+    
+}
+
+.w-100{
+    width: 100% !important;
+}
+
+.w-15{
+    width: 15% !important;
+}
+
+.w-25{
+    width: 25% !important;
+}
+
+.w-30{
+    width: 30% !important;
+}
+
+.w-35{
+    width: 35% !important;
+}
+
+
+.w-45{
+    width: 45% !important;
+}
+
+.w-50{
+    width: 50% !important;
+}
+
+.w-65{
+    width: 65% !important;
+}
+
+.w-70{
+    width: 70% !important;
+}
+
+.w-80{
+    width: 80% !important;
+}
+
+.mr-left{
+    margin-left: 15px !important;
+}
+
+.d-flex {
+    display:  flex !important;
+}
+
+/* table {
+    border-collapse:collapse;
+  
+     
+ }
+
+.right table {
+    border-collapse:collapse;
+  
+     
+ } */
+
+
+
+
+
+.fourth-section{
+    display: flex;
+    width: 100%;
+
+}
+
+
+
+.fourth-section .imagen-grafica{
+    width: 30%;
+    margin-left: 40px;
+
+}
+
+.fourth-section .calidad{
+    width: 35%;
+    padding: 20px;
+   
+}
+
+.calidad p{
+    margin: 2px;
+}
+
+
+
+.fourth-section img{
+    width: 200px;
+    height: 200px;
+   
+   
+}
+
+.super {
+    text-align: justify;
+    font-size: x-small;
+    width: 30%;
+    font-family: Thin;
+
+}
+
+.five-section{
+    display: flex;
+}
+
+.nota{
+    width: 30%;
+}
+
+.parrafo{
+    background-color: #e9e8e6;
+    padding: 20px;
+}
+
+.operador{
+    margin: 40px;
+    width: 30%;
+}
+
+.operador p{
+   margin: 0px;
+}
+
+.operador p:first-child{
+    margin-bottom: 10px;
+ }
+
+.concepto-pago{
+    margin: 40px;
+}
+
+table th{
+    border-right: 5px solid #e9e8e6;
+    background-color: #e9e8e6;
+}
+
+.concepto-pago table th{
+    border-right: 5px solid #e9e8e6;
+    background-color: #e9e8e6;
+}
+
+
+.sixth{
+    display: flex;
+    width: 100%;
+}
+
+.sixth img{
+    width: 100px;
+    height: 100px;
+}
+
+.logo2{
+    width: 20%;
+    display: flex;
+    
+    justify-content: center;
+}
+
+.codbarra{
+   box-sizing: content-box;
+    border: 2px solid black;
+    width: 65%;
+    height: 100px;
+    display: flex;
+}
+
+.seven{
+    width: 100%;
+    display: flex;
+}
+
+.valor{
+    background-color: #f3e060;
+    display: flex;
+    gap: 20px;
+}
+
+
+.codbarra img{
+
+    width: 300px;
+    height: 100%;
+
+    margin: auto;
+
+    justify-content: center;
+  
+
+
+}
+
+.total{
+   width: 330px;
+   margin-left: 30px;
+   margin-right: 10px;
+}
+
+.valor{
+    align-items: center;
+    padding: 5px;
+}
+
+
+.tabla{
+    padding-top: 10px;
+    width: 80%;
+   
+    
+}
+
+.tabla thead{
+   background-color: var(--first-color);
+   color: white;
+    
+    
+}
+
+.tabla td{
+    border: 2px solid black;
+     
+     
+ }
+
+
+.tabla table{
+    width: -webkit-fill-available;
+    border-collapse: collapse;
+}
+
+
+.correo{
+    display: flex;
+}
+
+.correo img{
+    height: 40px;
+    width: 50px;
+}
+
+.telefono{
+    display: flex;
+    margin-top: 15px;
+}
+
+.telefono img{
+    height: 40px;
+    width: 50px;
+}
+
+.contact-info p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 5px;
+
+    font-family: Thin;
+    font-size: medium;
+}
+
+.pagina{
+    margin: 15px 0px 0px 56px;
+}
+
+.medidores{
+    margin-top: 15px;
+}
+
+.recaudador {
+    position: relative;
+    transform: rotate(-90deg) translateY(60px) translateX(-90px);
+}
+
+hr{
+    border-color: #e9e8e6;
+    background-color: #e9e8e6;
+    opacity: 0.4;
+}
+    </style>
+</head>
+<body>
+    <div class="contenedor-general" style="width: 1080px; height: 1920px;">
+        <div class="header">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIGFbTdQqNys7nOKqNooP3hPmGVL8FK9lV-lg9zAgd&s" alt="Logo de CELSIA" class="logo">
+            <div class="company-info">
+              <p>{{empresa.nombre}}</p>
+              <p>NIT: {{empresa.nit}}</p>
+              <p>Calle 15 No. 29 - 30</p>
+              <p>Autopista Cali Yumbo,</p>
+              <p> Yumbo - Valle del Cauca</p>
+              <p>Teléfono: (2) 3210000</p>
+            </div>
+            <div class="numero-documento">
+              <p class="important">DOCUMENTO EQUIVALENTE A FACTURA N°</p>
+              <p >{{cabecera.numeroFactura}}</p>
+             
+            </div>
+          </div>
+
+          <div class="valor-pago" >
+            <p style=" text-align: end; font-weight: bold;margin-bottom: 10px;
+            margin-right: 239px;">Valores a pagar:</p>
+          </div>
+
+          <div class="info-valores">
+            <img src="https://raw.githubusercontent.com/AJCARVAJL15/Celsia/0be15c77f777e682a027fc8a3744a73b4044f220/BANNER.png" alt="banner de CELSIA" class="banner">
+            <div class="consumos-info" style="margin-left: 15px;">
+             
+               <table>
+                <tr><td style="background-color:#dd7133; color: #ffffff;">ENERGÍA</td><td style="background-color: #e7e6e6; width: 150px; padding-left: 15px;">{{detalleConceptos.subtotalEnergia}}</td></tr>
+                <tr><td style="background-color:#333d6e; color: #ffffff;">INTERNET</td ><td style="background-color: #e7e6e6; width: 150px; padding-left: 15px;">{{detalleConceptos.subtotalInternet}}</td></tr>
+                <tr><td style="background-color: #cd3544; color: #ffffff;">ALCANTARILLADO </td><td style="background-color: #e7e6e6; width: 150px; padding-left: 15px;">{{detalleConceptos.subTotalAlcantarillado}}</td></tr>
+                <tr><td style="background-color: #008b6e; color: #ffffff;">ASEO</td><td style="background-color: #e7e6e6; width: 150px; padding-left: 15px;">{{detalleConceptos.subtotalAseo}}</td></tr>
+                <tr><td style="background-color: #0089b5; color: #ffffff;">ALUMBRADO PUBLICO</td><td style="background-color: #e7e6e6; width: 150px; padding-left: 15px;">{{detalleConceptos.subtotalAlumbrado}}</td></tr>
+                <tr><td style="background-color: #565656; color: #ffffff;">OTROS CONCEPTOS</td><td style="background-color: #e7e6e6; width: 150px; padding-left: 15px;">{{detalleConceptos.subtotalOtras}}</td></tr>
+                <tr><td style="background-color:  #998f90; color: #ffffff;">SALDO ANTERIOR</td><td style="background-color: #e7e6e6; width: 150px; padding-left: 15px;">{{detalleConceptos.totalApagar}}</td></tr>
+                <tr><td style="background-color: #f3e060; color: #665943;">TOTAL A PAGAR</td><td style="background-color: #e7e6e6; width: 150px; padding-left: 15px;">{{detalleConceptos.totalMes}}</td></tr>
+               </table>
+               
+               <span><strong>Pago oportuno hasta:</strong></span>
+               <span>06/12/2022</span><br>
+               <span><strong>Suspension desde:</strong></span>
+               <span>06/12/2022</span>
+              </div>
+
+          </div>
+          <div class="third-section">
+
+            <div class="left" style="margin-right: 40px;">
+              <div class="box top-box">
+                <p>CNC DEL MAR SAS ESP</p>
+                <p>NIC:</p>
+                <p>Direccion de inmueble:</p>
+                <p>Direccion de envio:</p>
+              </div>
+              <div class="box bottom-box">
+                <div class="contact-info" >
+  <div class="correo">
+    <img src="https://cdn.pixabay.com/photo/2014/03/25/16/54/envelope-297570_640.png" alt="" srcset="">
+
+    <p>Correo electronico: <br> servicioalcliente@celsia.com</p>
+
+
+  </div>
+
+  <div class="telefono">
+    <img src="https://us.123rf.com/450wm/photoart23d/photoart23d1902/photoart23d190201339/117662103-icono-de-s%C3%ADmbolo-de-tel%C3%A9fono-naranja-simple-aislado-ilustraci%C3%B3n-vectorial.jpg?ver=6" alt="" srcset="">
+  
+    <p>Linea de servicio al cliente: <br> 018000112115</p>
+  </div>
+
+  <div class="pagina">
+   
+  
+   <p>www.celsia.com</p> 
+  </div>
+</div>
+              </div>
+            </div>
+            <div style="width: 70%;">
+              <h2>ENERGÍA</h2>
+              <div style="line-height: 8px;">
+                <p><strong>Prestador del servicio:</strong> CELSIA COLOMBIA S.A. E.S.P.</p>
+                <p><strong>NIT:</strong> 800.249.860-1</p>
+                <p><strong>Clase del servicio:</strong> {{cabecera.clasificacion.descTension}} || {{cabecera.clasificacion.descTarifa}}</p>
+                <p><strong>NIU:</strong> {{cabecera.niu}}</p>
+                <p><strong>Fecha de emisión:</strong> 29/11/2022</p>
+                <p><strong>Periodo facturado:</strong> 01/10/2022 - 01/11/2022</p>
+                <p><strong>Días facturados:</strong> {{datosConsumo.diasFacturados}}</p>
+                <p><strong>Facturas por pagar:</strong> 0</p>
+                <p><strong>Monto:</strong> $0.00</p>
+                <p><strong>Financiaciones pendientes:</strong> 0</p>
+                <p><strong>Tasa por mora:</strong> 0.5</p>
+                <p><strong>Fecha último pago:</strong> 18/10/2022</p>
+                <p><strong>Valor último pago:</strong> $8,007,500.00</p>
+              </div>
+              <h2>Consumo de energía</h2>
+                <table class="w-100" style="border-collapse: separate; border-spacing: 5px 1px;">
+                  <tbody>
+                    <tr>
+                      <td style="border-top-left-radius: 20px;
+                      border-bottom-left-radius: 20px; padding: 2px 15px 0px 15px !important; font-size: 14px;background-color: #e9e8e6; text-align: center; color:#575654;"><b>Concepto</b></td>
+                      <td style="padding: 2px 15px 0px 15px !important; font-size: 14px; background-color: #e9e8e6; text-align: center; color:#575654;"><b>Lect. Actual</b> <br/>(kWh) </td>
+                      <td style="padding: 2px 15px 0px 15px !important; font-size: 14px; background-color: #e9e8e6; text-align: center; color:#575654;"><b>Lect. Anterior</b> <br/> (kWh)</td>
+                      <td style="padding: 2px 15px 0px 15px !important; font-size: 14px; background-color: #e9e8e6; text-align: center; color:#575654;"><b>Múltiplo</b></td>
+                      <td style="padding: 2px 15px 0px 15px !important; font-size: 14px; background-color: #e9e8e6; text-align: center; color:#575654;"><b>Consumo</b></td>
+                      <td style="padding: 2px 15px 0px 15px !important; font-size: 14px; background-color: #e9e8e6; text-align: center; color:#575654;"><b>Tarifa</b></td>
+                      <td style="border-top-right-radius: 20px;
+                      border-bottom-right-radius: 20px; border: none; padding: 2px 15px 0px 15px !important; font-size: 14px; background-color: #e9e8e6; text-align: center; color:#575654;"><b>Subtotal</b></td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 0px 15px 0px 15px !important; font-size: 7px; background-color: #fff; color: #fff; border-spacing: 10px 5px; "></td>
+                      <td style="padding: 0px 15px 0px 15px !important; font-size: 7px; background-color: #fff; color: #fff;"></td>
+                      <td style="padding: 0px 15px 0px 15px !important; font-size: 7px; background-color: #fff; color: #fff;"></td>
+                      <td style="padding: 0px 15px 0px 15px !important; font-size: 7px; background-color: #fff; color: #fff;"></td>
+                      <td style="padding: 0px 15px 0px 15px !important; font-size: 7px; background-color: #fff; color: #fff;"></td>
+                      <td style="padding: 0px 15px 0px 15px !important; font-size: 7px; background-color: #fff; color: #fff;"></td>
+                      <td style="padding: 0px 15px 0px 15px !important; font-size: 7px; background-color: #fff; color: #fff;"></td>
+                    </tr>
+                    <tr>
+                      <td style="border-top:1px solid #e9e8e6; border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6;">{{datosConsumo.apMedidaList.concepto}}</td>
+                      <td style="border-top:1px solid #e9e8e6; border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center;">{{datosConsumo.apMedidaList.lecturaActual}}</td>
+                      <td style="border-top:1px solid #e9e8e6; border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center; padding-top: 5px;">{{datosConsumo.apMedidaList.lecturaAnterior}}</td>
+                      <td style="border-top:1px solid #e9e8e6; border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center; padding-top: 5px;">{{datosConsumo.apMedidaList.factorMultiplo}}</td>
+                      <td style="border-top:1px solid #e9e8e6; border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center; padding-top: 5px;">{{datosConsumo.apMedidaList.Consumo}}</td>
+                      <td style="border-top:1px solid #e9e8e6; border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center; padding-top: 5px;">{{datosConsumo.apMedidaList.tarifa}}</td>
+                      <td style="border-top:1px solid #e9e8e6; border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center; padding-top: 5px; background-color: #e9e8e6; border-bottom-width: 0px !important; border-top-width: 0px !important;">{{datosConsumo.apMedidaList.subtotal}}</td>
+                    </tr>
+                    <tr>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6;">0</td>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center;">0</td>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center;">0</td>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center;">0</td>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center;">0</td>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center;">0</td>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center; background-color: #e9e8e6; border-bottom-width: 0px !important; border-top-width: 0px !important;">0</td>
+                    </tr>
+                    <tr>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6;">0</td>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center;">0</td>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center;">0</td>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center;">0</td>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center;">0</td>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center;">0</td>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center; background-color: #e9e8e6; border-bottom-width: 0px !important; border-top-width: 0px !important;">0</td>
+                    </tr>
+                    <tr>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; border-bottom: 1px solid #e9e8e6;">0</td>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; border-bottom: 1px solid #e9e8e6; text-align: center;">0</td>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; border-bottom: 1px solid #e9e8e6; text-align: center;">0</td>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; border-bottom: 1px solid #e9e8e6; text-align: center;">0</td>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; border-bottom: 1px solid #e9e8e6; text-align: center;">0</td>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; border-bottom: 1px solid #e9e8e6; text-align: center;">0</td>
+                      <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; border-bottom: 1px solid #e9e8e6; text-align: center; background-color: #e9e8e6; border-bottom-width: 0px !important; border-top-width: 0px !important;">0</td>
+                    </tr>
+                  </tbody>
+                </table>
+              <div class="medidores">
+                <span style="margin-right: 42px;">Medidor I:</span>
+                <span>Medidor II:</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="fourth-section">
+
+            <div class="super">Vigilada par la Superintendencia de Servicios Públicos - SSP, actividad econ6mica principal 3511. Grandes Contribuyentes segUn Resolución N° 012635 del 14/Dic/2018. Responsable impuesto sabre las ventas - IVA Agente retenedor de IVA articulo 437-2 (numeral 2) del E.T. Autorretenedor en renta seglln Res. 0547 del 25 de enero de 2002. Autorretenedor ICA en el municipio de Santiago de Cali, seglln Res. 0247 del 11 de marzo de 1997, Guadalajara de Buga, Cartage, Jamundf, Pereira, La Cumbre y Alcala. Este documento equivalente a la factura presta merito ejecutivo de acuerdo con el artfculo 130 de la Ley 142 de 1994. Este documento equivalente a la factura se asimila para todos sus efectos a una letra de cambio y par lo tanto sirve de titulo ejecutivo, segUn artfculo 774 del C6digo de Comercio. Documento equivalente a factura impreso par CELSIA COLOMBIA SA E.S.P. NIT: 800.249.860-1</div>
+            <div class="imagen-grafica">
+              <!-- <img src="https://t1.uc.ltmcdn.com/es/posts/0/9/0/como_realizar_un_grafico_de_barras_en_excel_2007_15090_600.jpg" alt="" srcset=""> -->
+            <p>Promedio ultimos 6 meses:<strong>14213.33</strong></p>
+            </div>
+
+            <div class="calidad">
+              <h2><strong>Calidad del servicio</strong></h2>
+              <p>Duración trimestral: <strong>{{calidadServicio.duracionTrimestre}}</strong></p>
+              <p>Grupo:<strong>{{calidadServicio.grupoAlim}}</strong></p>
+              <p>Transformador<strong>{{calidadServicio.numTransformador}}</strong></p>
+              <p>CMp(kWh):<strong>0</strong></p>
+              <p>CRO m-1($/kWh):<strong>0</strong></p>
+              <p>Circuito:<strong>{{calidadServicio.circuito}}</strong></p>
+              <p>Vr. a compensar:<strong>{{calidadServicio.consumoCompensar}}</strong></p>
+            </div>
+          </div>
+
+          <div class="five-section">
+
+            
+            <div class="nota">
+              <h3>NOTA IMPORTANTE</h3>
+             <div class="parrafo"> Si vives en estratos 4, 5 o 6, o eres cliente NO residencial puedes realizar un aporte voluntario (sugerido 10%) para ayudar a las mas desfavorecidos en el pago de alcantarillado Entra a celsia.com y busca el baton "Comparto mi energía" para mas información.</div></div>
+
+            <div class="operador">
+              <h2><strong>Operador de red</strong></h2>
+              <p>Operador: <strong>{{operadorRed.operadorRed}}</strong></p>
+              <p>Nivel de tension:<strong>{{operadorRed.tension}}</strong></p>
+              <p>Dirección<strong>{{operadorRed.direccion}}</strong></p>
+              <p>Propiedad transformador:<strong>{{operadorRed.equipo}}</strong></p>
+              <p>Tel. daños:<strong>0</strong></p>
+              <p>Red:<strong>{{operadorRed.tipoRed}}</strong></p>
+              
+            </div>
+            
+
+            <div class="concepto-pago">
+              <h2 style="margin-top: 0px;"><strong>Valor a pagar energía</strong></h2>
+              <table class="w-100" style="border-collapse: separate; border-spacing: 5px 1px;">
+                <tbody>
+                  <tr>
+                    <td style="border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px; padding: 5px 15px 5px 15px !important; font-size: 14px;background-color: #e9e8e6; text-align: left; color:#575654;"><b>Concepto</b></td>
+                    <td style="border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px; border: none; padding: 2px 15px 0px 15px !important; font-size: 14px; background-color: #e9e8e6; text-align: center; color:#575654;"><b>Valor</b></td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0px 15px 0px 15px !important; font-size: 7px; background-color: #fff; color: #fff; border-spacing: 10px 5px; ">0</td>
+                    <td style="padding: 0px 15px 0px 15px !important; font-size: 7px; background-color: #fff; color: #fff;">0</td>
+                  <tr>
+                    <td style="border-top:1px solid #e9e8e6; border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6;">{{detalleConceptos.conceptosList.detalle}}</td>
+                    <td style="border-top:1px solid #e9e8e6; border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center; padding-top: 5px; background-color: #e9e8e6; border-bottom-width: 0px !important; border-top-width: 0px !important;">{{detalleConceptos.conceptosList.valor}}</td>
+                  </tr>
+                  <tr>
+                    <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6;">Redondeo Facturaciones Anteriores</td>
+                    <td style="border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center; padding-top: 5px; background-color: #e9e8e6; border-bottom-width: 0px !important; border-top-width: 0px !important;">0</td>
+                  </tr>
+                  <tr>
+                    <td style="border-bottom:1px solid #e9e8e6; border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6;">Aproximacion a decenas</td>
+                    <td style="border-bottom:1px solid #e9e8e6; border-left: 1px solid #e9e8e6; border-right: 1px solid #e9e8e6; text-align: center; padding-top: 5px; background-color: #e9e8e6; border-bottom-width: 0px !important; border-top-width: 0px !important;">0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        <div class="sixth">
+
+          <div class="logo2">
+            <img src="https://ramosgarcia.com.co/wp-content/uploads/2021/06/Celsia-Vertical.png" alt="">
+           
+          </div>
+
+          <div class="tabla">
+            <table>
+              <thead>
+                <th style="background-color: #ee752e; border:none !important;">CLIENTE</th>
+                <th style="background-color: #ee752e; border:none !important;">PERIODO FACTURADO</th>
+                <th style="background-color: #ee752e; border:none !important;">ID DE COBROS</th>
+                <th style="background-color: #ee752e; border:none !important;">NIC</th>
+                <th style="background-color: #ee752e; border:none !important;">PAGO OPORTUNO</th>
+              </thead>
+              
+              <tbody>
+                <td>CNC DEL MAR SAS ESP</td>
+                <td>01/10/2022      01/11/2022</td>
+                <td>3090657039</td>
+                <td>3090657</td>
+                <td>06/12/2022</td>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="seven">
+
+          <div class="codbarra">
+
+            <img src="https://img.freepik.com/psd-gratis/ilustracion-codigo-barras-aislado_23-2150584088.jpg?size=626&ext=jpg&ga=GA1.1.1687694167.1714608000&semt=ais" alt="codigo" ><p>{{codigoBarra.codBarra}}</p>
+            <p>{{codigoBarra.descBarra}}</p>
+          </div>
+          
+          <div class="total">
+              <div class="w-100 d-flex">
+                <div style="width: 90%;">
+                  <p style="font-size: small; margin-top: 0px; text-align: center;"><strong>DOCUMENTO EQUIVALENTE A LA FACTURA N</strong></p>
+                  <p style="text-align: center; margin-top: -8px;">{{cabecera.numeroFactura}}</p>
+                  <div class="valor" style="margin-top: -8px;">
+                    <div><strong>TOTAL A <br>PAGAR</strong></div>
+                    <div>$</div>
+                    <div>14.092.400,0</div>
+                  </div>
+                </div>
+                <div class="recaudador" style="width: 10%;">
+                  RECAUDADOR
+                </div>
+              </div>
+
+          </div>
+
+
+        </div>
+            
+       
+            
+          </div>
+         
+    </div>
+
+  
+</body>
+</html>
